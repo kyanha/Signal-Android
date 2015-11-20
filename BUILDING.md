@@ -7,6 +7,8 @@ Basics
 Signal uses [Gradle](http://gradle.org) to build the project and to maintain
 dependencies.
 
+Building Signal is supported on Java 7 and earlier.  Java 8 will compile but warn about deprecated identifiers, and Java 9 will error out due to those deprecated identifiers now being keywords.  Do not file bugs on this (see https://github.com/WhisperSystems/Signal-Android/pull/4622 ).
+
 Building Signal
 ---------------
 
@@ -54,7 +56,7 @@ Setting up a development environment
 5. From the Quickstart panel, choose "Checkout from Version Control" then "git".
 6. Paste the URL for the Signal-Android project when prompted (https://github.com/WhisperSystems/Signal-Android.git).
 7. Android studio should detect the presence of a project file and ask you whether to open it. Click "yes".
-9. Default config options should be good enough.
+8. Default config options should be good enough.
 9. Project initialisation and build should proceed.
 
 Contributing code
